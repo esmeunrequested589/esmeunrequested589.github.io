@@ -275,7 +275,7 @@
                 const updateCount = () => {
                     const target = +counter.getAttribute('data-target');
                     const count = +counter.innerText;
-                    const speed = 100; 
+                    const speed = 70; 
                     const inc = target / speed;
 
                     if (count < target) {
@@ -308,7 +308,7 @@
             textPesan += "Mohon kesediaan Bapak/Ibu untuk menginformasikan prosedur pengajuan, estimasi nilai rate terbaru, serta kelengkapan berkas yang wajib kami siapkan.%0A%0A";
             textPesan += "Atas perhatian dan bantuannya, saya ucapkan terima kasih.";
             
-            const urlWhatsApp = "https://wa.me" + nomorWhatsApp + "?text=" + textPesan;
+            const urlWhatsApp = "https://wa.me/" + nomorWhatsApp + "?text=" + textPesan;
             window.open(urlWhatsApp, '_blank');
         }
 
