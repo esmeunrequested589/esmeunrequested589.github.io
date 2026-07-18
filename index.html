@@ -230,20 +230,77 @@
         </div>
         <p style="text-align: center; margin-top: 25px; font-size: 0.9em; color: #999;">&copy; 2026 PT. BERKAH SURETY. All Rights Reserved.</p>
     </footer>
-
+<!-- GABUNGAN SKRIP JAVASCRIPT PREMIUM -->
     <script>
+        // 1. SKRIP: TOMBOL BACK TO TOP LOGIC
+        window.onscroll = function() { scrollFunction(); checkReveal(); };
+
+        function scrollFunction() {
+            const btn = document.getElementById("btnBackToTop");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // 2. SKRIP: SCROLL REVEAL ANIMATION MECHANISM
+        function checkReveal() {
+            const reveals = document.querySelectorAll(".reveal");
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 100;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    // Trigger counter jika section stat-container aktif
+                    if (reveals[i].classList.contains('stat-container')) {
+                        startCounters();
+                    }
+                }
+            }
+        }
+
+        // 3. SKRIP: ANIMATED COUNTER CONTROLLER
+        let counterStarted = false;
+        function startCounters() {
+            if (counterStarted) return;
+            counterStarted = true;
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const speed = 100; 
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target + (target === 24 ? " Jam" : target === 100 ? "%" : "+");
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        // 4. SKRIP: FORMULIR WHATSAPP DENGAN FORM VALIDASI & PESAN FORMAL
         function kirimKeWhatsApp() {
-            const nomorWhatsApp = "6282183298013"; 
-            
+            const nomorWhatsApp = "6282183298013"; // Ganti dengan nomor Anda
             const nama = document.getElementById('nama').value;
             const layanan = document.getElementById('layanan').value;
             
             if (!nama || !layanan) {
-                alert("Mohon isi nama dan pilih layanan.");
+                alert("Mohon lengkapi kolom nama dan jenis layanan Anda.");
                 return;
             }
             
-            let textPesan = "Selamat siang Bapak/Ibu Admin PT. BERKAH SURETY,%0A%0A";
+            let textPesan = "Selamat siang Bapak/Ibu Admin PT. Berkah Surety,%0A%0A";
             textPesan += "Perkenalkan, saya ingin mengajukan permohonan konsultasi mengenai pengurusan dokumen jaminan proyek dengan rincian berikut:%0A%0A";
             textPesan += "*Data Pemohon:*%0A";
             textPesan += "- Nama / Perusahaan: " + nama + "%0A";
@@ -251,9 +308,12 @@
             textPesan += "Mohon kesediaan Bapak/Ibu untuk menginformasikan prosedur pengajuan, estimasi nilai rate terbaru, serta kelengkapan berkas yang wajib kami siapkan.%0A%0A";
             textPesan += "Atas perhatian dan bantuannya, saya ucapkan terima kasih.";
             
-            const urlWhatsApp = "https://wa.me/" + nomorWhatsApp + "?text=" + textPesan;
+            const urlWhatsApp = "https://wa.me" + nomorWhatsApp + "?text=" + textPesan;
             window.open(urlWhatsApp, '_blank');
         }
+
+        // Inisialisasi pengecekan reveal pertama kali saat web dibuka
+        document.addEventListener("DOMContentLoaded", checkReveal);
     </script>
 </body>
 </html>
