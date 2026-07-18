@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. BERKAH SURETY - Bank Garansi & Surety Bond NON COLLATERAL</title>
+    <style>
+        :root {
+            --primary-color: #0d2c54; 
+            --secondary-color: #c9a66b; 
+            --accent-color: #25D366; 
+            --text-color: #333333;
+            --bg-light: #f8f9fa;
+        }
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-color); 
+            max-width: 750px; 
+            margin: 0 auto; 
+            padding: 15px;
+        }
+        header { 
+            text-align: center; 
+            padding: 25px 15px; 
+            background: linear-gradient(135deg, var(--primary-color), #1a4a80); 
+            color: white; 
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        header h1 { margin: 0 0 5px 0; font-size: 2em; }
+        .tagline { color: var(--secondary-color); font-weight: bold; font-size: 1.05em; }
+        header p { margin: 5px 0 0 0; font-size: 0.95em; opacity: 0.9; }
+        
+        h2 { color: var(--primary-color); border-bottom: 2px solid var(--secondary-color); padding-bottom: 6px; margin-top: 30px; font-size: 1.4em; }
+        h3 { color: var(--primary-color); margin-top: 20px; font-size: 1.15em; }
+        
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 15px 0; }
+        .feature-item { background: var(--bg-light); padding: 12px; border-left: 3px solid var(--secondary-color); border-radius: 4px; font-size: 0.9em; }
+        .feature-item strong { display: block; color: var(--primary-color); }
+        
+        table { width: 100%; border-collapse: collapse; margin: 12px 0 4px 0; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 0.85em; }
+        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background-color: var(--primary-color); color: white; }
+        .badge { background: var(--secondary-color); color: var(--primary-color); padding: 1px 5px; border-radius: 3px; font-weight: bold; font-size: 0.8em; }
+        .note { font-size: 0.75em; color: #777; font-style: italic; display: block; margin-bottom: 15px; }
+        
+        .insurance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 12px; }
+        .insurance-card { border: 1px solid #e1e8ed; padding: 12px; border-radius: 6px; background: var(--bg-light); }
+        .insurance-card h4 { margin: 0 0 3px 0; color: var(--primary-color); font-size: 0.95em; }
+        .insurance-card p { font-size: 0.8em; margin: 0; }
+        
+        .product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 6px; padding: 0; list-style: none; font-size: 0.85em; }
+        .product-list li { background: #f1f5f9; padding: 6px 10px; border-radius: 4px; }
+        
+        .partner-box { background: var(--bg-light); padding: 15px; border-radius: 6px; border: 1px solid #e1e8ed; margin-bottom: 12px; font-size: 0.85em; }
+        
+        .cta-section { background: #ffffff; color: var(--text-color); padding: 20px; border: 1px solid #e1e8ed; border-radius: 8px; margin-top: 35px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .cta-section h3 { text-align: center; margin: 0 0 5px 0; color: var(--primary-color); }
+        .cta-section p { text-align: center; margin: 0 0 15px 0; font-size: 0.85em; color: #666; }
+        
+        .form-container { max-width: 400px; margin: 0 auto; }
+        .form-group { margin-bottom: 10px; }
+        .form-group label { display: block; margin-bottom: 4px; font-weight: 500; font-size: 0.8em; color: var(--primary-color); }
+        .form-group input, .form-group select { width: 100%; padding: 8px; border: 1px solid #cccccc; border-radius: 4px; background: #ffffff; color: #333333; font-size: 0.85em; box-sizing: border-box; }
+        .btn-submit { width: 100%; background: var(--accent-color); color: white; border: none; padding: 10px; font-size: 0.9em; font-weight: bold; border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-submit:hover { background: #20ba5a; }
+        
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e1e8ed; font-size: 0.85em; color: #555; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .footer-info h4 { color: var(--primary-color); margin: 0 0 8px 0; font-size: 1em; border-left: 3px solid var(--secondary-color); padding-left: 8px; }
+        .footer-info p { margin: 0 0 5px 0; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PT. BERKAH SURETY</h1>
+        <p class="tagline">JASA BANK GARANSI & SURETY BOND NON COLLATERAL</p>
+        <p>Cepat • Aman • Profesional • Terpercaya</p>
+    </header>
+
+    <main>
+        <!-- BAGIAN BARU: PENJELASAN SINGKAT PERUSAHAAN -->
+        <section class="company-profile">
+            <p><strong>PT. Berkah Surety</strong> menghadirkan solusi dan jasa profesional penerbitan Bank Garansi, Surety Bond, dan General Insurance untuk mendukung kebutuhan perusahaan dalam proses Tender, Proyek Konstruksi, Pembayaran Uang Muka, Pemeliharaan Pekerjaan, serta pemenuhan persyaratan administrasi perusahaan.</p>
+        </section>
+        <section>
+            <h2>Mengapa Memilih Kami?</h2>
+            <div class="features">
+                <div class="feature-item"><strong>✓ Non Collateral</strong>Tanpa Agunan</div>
+                <div class="feature-item"><strong>✓ Fast Process</strong>Respon Cepat</div>
+                <div class="feature-item"><strong>✓ Bank Nasional</strong>Partner Terpercaya</div>
+                <div class="feature-item"><strong>✓ OJK Compliance</strong>Sesuai Regulasi</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Bank Garansi</h2>
+            <p style="font-size: 0.9em;">Rate per tahun <span class="badge">100% Tanpa Agunan</span></p>
+            <table>
+                <thead>
+                    <tr><th>Jenis</th><th>Rate</th><th>Dokumen Persyaratan</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Bid Bond</strong></td><td>2.50%</td><td>Dok.Pengadaan/RKS/Und.Lelang</td></tr>
+                    <tr><td><strong>Performance Bond</strong></td><td>4.00%</td><td>SPPBJ/SPK/Kontrak/PO/WO</td></tr>
+                    <tr><td><strong>Advance Payment Bond</strong></td><td>4.50%</td><td>Kontrak/SPMK/SPK/PO/WO</td></tr>
+                    <tr><td><strong>Maintenance Bond</strong></td><td>4.50%</td><td>Kontrak/BAST Pek I</td></tr>
+                </tbody>
+            </table>
+            <span class="note">* Belum termasuk admin & legalisasi notaris untuk SPKMGR.</span>
+        </section>
+
+        <section>
+            <h2>Surety Bond</h2>
+            <p style="font-size: 0.9em;">Jangka waktu per 3 Bulan <span class="badge">100% Tanpa Agunan</span></p>
+            <table>
+                <thead>
+                    <tr><th>Jenis</th><th>Rate</th><th>Dokumen Persyaratan</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Bid Bond</strong></td><td>0.25%</td><td>Dok.Pengadaan/RKS/Und.Lelang</td></tr>
+                    <tr><td><strong>Performance Bond</strong></td><td>0.40%</td><td>SPPBJ/SPK/Kontrak/PO/WO</td></tr>
+                    <tr><td><strong>Advance Payment Bond</strong></td><td>0.45%</td><td>Kontrak/SPMK/SPK/PO/WO</td></tr>
+                    <tr><td><strong>Maintenance Bond</strong></td><td>0.40%</td><td>Kontrak/BAST Pek I</td></tr>
+                </tbody>
+            </table>
+            <span class="note">* Belum termasuk admin & legalisasi notaris untuk SPKMGR.</span>
+        </section>
+        <section>
+            <h2>General Insurance</h2>
+            <p style="font-size: 0.9em;">Kami membantu penerbitan asuransi umum dengan rate negotiable:</p>
+            
+            <div class="insurance-grid">
+                <div class="insurance-card"><h4>🛡️ CAR</h4><p>Perlindungan pekerjaan konstruksi.</p></div>
+                <div class="insurance-card"><h4>🏗️ EAR</h4><p>Perlindungan instalasi proyek.</p></div>
+                <div class="insurance-card"><h4>🏢 PAR</h4><p>Perlindungan aset perusahaan.</p></div>
+                <div class="insurance-card"><h4>🚢 Marine Cargo</h4><p>Perlindungan pengiriman barang.</p></div>
+            </div>
+
+            <h3>Produk Lainnya:</h3>
+            <ul class="product-list">
+                <li>✓ Commercial Liability (CGL)</li>
+                <li>✓ Third Party Liability (TPL)</li>
+                <li>✓ Asuransi Kebakaran</li>
+                <li>✓ Kendaraan Bermotor</li>
+                <li>✓ Kecelakaan Diri</li>
+                <li>✓ Rangka Kapal</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mitra Strategis Terpercaya</h2>
+            <div class="partner-box">
+                <strong>Referensi Bank Penerbit:</strong>
+                <p style="margin:4px 0 0 0; color: #555;">Mandiri • BNI • BRI • BTN • BCA • BPD Jatim • Bank BJB • BPD Kalsel • BPD Kalbar • Permata • Maybank • LPEI • Sinar Mas • Dan bank mitra lainnya.</p>
+            </div>
+
+            <div class="partner-box">
+                <strong>Perusahaan Penjaminan & Asuransi:</strong>
+                <p style="margin:4px 0 0 0; color: #555;">ACA • Tripakarta • Mega Insurance • JAMKRINDO • Jasindo • Askrindo • Sinar Mas • MoneeInsure • Dan asuransi mitra lainnya sesuai OJK.</p>
+            </div>
+        </section>
+
+        <!-- FORMULIR WHATSAPP KECIL & MINIMALIS -->
+        <section class="cta-section">
+            <h3>Konsultasi Jaminan Proyek</h3>
+            <p>Silakan isi nama dan pilih layanan untuk terhubung langsung via WhatsApp.</p>
+            
+            <div class="form-container">
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label for="nama">Perusahaan / Nama *</label>
+                        <input type="text" id="nama" placeholder="Contoh: PT Amanah / Ibu Lisa" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="layanan">Layanan Proyek *</label>
+                        <select id="layanan" required>
+                            <option value="">-- Pilih Layanan --</option>
+                            <option value="Bank Garansi">Bank Garansi</option>
+                            <option value="Surety Bond">Surety Bond</option>
+                            <option value="General Insurance">General Insurance</option>
+                            <option value="Konsultasi Produk Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" class="btn-submit" onclick="kirimKeWhatsApp()">
+                        Hubungi via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- BAGIAN FOOTER BARU: INTEGRASI GOOGLE MAPS -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h4>Kantor Pusat</h4>
+                <p><strong>PT. BERKAH SURETY</strong></p>
+                <p><strong>Mobile : +6282183298013</strong></p>
+                <p>Jl. Jenderal Sudirman No. XX, Lantai X, Gedung XXXXXX</p>
+                <p>Kec. Kebayoran Baru, Kota Jakarta Selatan,</p>
+                <p>Daerah Khusus Ibukota Jakarta - 12190</p>
+                
+                <h4 style="margin-top: 15px;">Jam Operasional</h4>
+                <p>Senin – Jumat: 08.30 WIB – 17.00 WIB</p>
+                <p>Sabtu: 09.00 WIB – 15.00 WIB</p>
+                <p style="color: #ca3434;">Minggu & Hari Libur Nasional: Tutup</p>
+            </div>
+            
+            <!-- SEMATAN IFRAME GOOGLE MAPS RESPONSIF -->
+            <div class="footer-info">
+                <h4>Lokasi Kami</h4>
+                <div style="width: 100%; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #ddd; height: 200px;">
+                    <!-- Catatan: Untuk mengganti peta, tukar nilai atribut src di bawah ini dengan tautan embed dari Google Maps kantor Anda -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3163226.087718356!2d128.72090212199518!3d-67.2244983603377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1784364947147!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 25px; font-size: 0.9em; color: #999;">&copy; 2026 PT. BERKAH SURETY. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function kirimKeWhatsApp() {
+            const nomorWhatsApp = "6282183298013"; 
+            
+            const nama = document.getElementById('nama').value;
+            const layanan = document.getElementById('layanan').value;
+            
+            if (!nama || !layanan) {
+                alert("Mohon isi nama dan pilih layanan.");
+                return;
+            }
+            
+            let textPesan = "Selamat siang Bapak/Ibu Admin PT. BERKAH SURETY,%0A%0A";
+            textPesan += "Perkenalkan, saya ingin mengajukan permohonan konsultasi mengenai pengurusan dokumen jaminan proyek dengan rincian berikut:%0A%0A";
+            textPesan += "*Data Pemohon:*%0A";
+            textPesan += "- Nama / Perusahaan: " + nama + "%0A";
+            textPesan += "- Jenis Layanan: " + layanan + "%0A%0A";
+            textPesan += "Mohon kesediaan Bapak/Ibu untuk menginformasikan prosedur pengajuan, estimasi nilai rate terbaru, serta kelengkapan berkas yang wajib kami siapkan.%0A%0A";
+            textPesan += "Atas perhatian dan bantuannya, saya ucapkan terima kasih.";
+            
+            const urlWhatsApp = "https://wa.me/" + nomorWhatsApp + "?text=" + textPesan;
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
+</body>
+</html>
